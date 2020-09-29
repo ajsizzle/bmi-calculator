@@ -22,4 +22,14 @@ class CalculatorBrain {
       return 'Underweight';
     }
   }
+
+  String getInterpretation() {
+    if (_bmi >= 25) {
+      return 'You have a higher than normal body weight. Try to exercise more.';
+    } else if (_bmi > 18.5) {
+      return 'Keep doing what you\'re doing! It\'s definitely working!';
+    } else {
+      return 'You have a lower than normal body weight. Go HAM on your next cheeseburger ;)';
+    }
+  }
 }
